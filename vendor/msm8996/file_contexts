@@ -87,12 +87,10 @@
 #
 /(vendor|system/vendor)/bin/seccamd u:object_r:seccamd_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.automotive\.vehicle@2\.0-hal-service          u:object_r:hal_automotive_vehicle_qti_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.automotive\.audiocontrol@1\.0-service     u:object_r:hal_audiocontrol_qti_exec:s0
 
 ###################################
 # sysfs files
 #
-/sys/devices/virtual/graphics/fb([0-2])+/lineptr_value                          u:object_r:sysfs_graphics:s0
 
 /sys/devices/soc/b00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpu_available_frequencies   u:object_r:sysfs_kgsl:s0
 
